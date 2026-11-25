@@ -514,8 +514,34 @@
       text-decoration: underline;
     }
 
+    .download-cta-box {
+      margin: 1.5rem 0 1.25rem;
+      text-align: center;
+    }
+
+    .btn-download-pdf {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background-color: var(--umsa-blue);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0.8rem 1.45rem;
+      border-radius: 8px;
+      border-bottom: 3px solid var(--umsa-red);
+      box-shadow: 0 4px 12px rgba(0, 40, 85, 0.18);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-download-pdf:hover {
+      background-color: var(--umsa-blue-mid);
+      transform: translateY(-1px);
+    }
+
     .signature-box {
-      margin-top: 2rem;
+      margin-top: 1.25rem;
       padding-top: 1.5rem;
       border-top: 2px solid #e2e8f0;
       text-align: center;
@@ -1131,6 +1157,15 @@
             <strong>Página Web Institucional</strong>
             <a href="https://fment.umsa.bo/" target="_blank" rel="noopener noreferrer">https://fment.umsa.bo/</a>
           </div>
+        </div>
+
+        <div class="download-cta-box">
+          <a href="Instructivo_Postulantes_Primer_Examen_Parcial_PSA_2027.pdf" download="Instructivo_Postulantes_Primer_Examen_Parcial_PSA_2027.pdf" class="btn-download-pdf">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M5 20h14v-2H5v2zm7-18v11.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41L11 13.17V2h1z"/>
+            </svg>
+            descargar el documento del instructivo aquí
+          </a>
         </div>
 
         <div class="signature-box">
