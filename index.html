@@ -1235,6 +1235,18 @@
   </div>
 
   <script>
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+
+    function forceTopScroll() {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+
+    forceTopScroll();
+    window.addEventListener("load", forceTopScroll);
+    window.addEventListener("pageshow", forceTopScroll);
+
     const DRIVE_VIDEO_URL = "https://drive.google.com/file/d/1e4lu_jce8ytaGJzem0opfwNTy8fO__Wr/preview";
 
     function openVideoModal() {
