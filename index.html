@@ -246,13 +246,6 @@
       color: #7f1d1d;
     }
 
-    .alert-pending {
-      background-color: #fffbeb;
-      border: 1px dashed #d97706;
-      color: #92400e;
-      font-weight: 500;
-    }
-
     .table-wrapper {
       overflow-x: auto;
       margin: 1rem 0;
@@ -508,13 +501,27 @@
     .signature-box .date-place {
       color: var(--text-muted);
       font-size: 0.92rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .signature-img {
+      display: inline-block;
+      max-width: 240px;
+      max-height: 95px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      margin: 0.25rem auto 0.35rem;
     }
 
     .signature-box .authority-name {
       font-weight: 800;
       font-size: 1.05rem;
       color: var(--umsa-blue);
+      padding-top: 0.25rem;
+      border-top: 1px solid #cbd5e1;
+      display: inline-block;
+      min-width: 260px;
     }
 
     .signature-box .authority-role {
@@ -522,6 +529,7 @@
       font-size: 0.88rem;
       color: var(--umsa-red);
       letter-spacing: 0.5px;
+      margin-top: 0.2rem;
     }
 
     .signature-box .authority-inst {
@@ -756,9 +764,6 @@
           <li>Se recomienda llegar con anticipación a la apertura de las 07:00 a. m., a fin de evitar demoras y aglomeraciones.</li>
           <li>No se recomienda acudir acompañado de familiares o terceros al área de fila e ingreso. Solo los postulantes deben permanecer en esta zona.</li>
         </ul>
-        <div class="alert-box alert-pending">
-          <strong>Hora de inicio del examen y hora límite de ingreso al aula:</strong> [A completar por la Unidad de Admisión Facultativa].
-        </div>
       </div>
     </section>
 
@@ -1069,6 +1074,9 @@
 
         <div class="signature-box">
           <div class="date-place">La Paz, noviembre de 2026</div>
+          <div>
+            <img src="FIRMA-BUENA.png" alt="Firma Dr. Gabriel Ramiro Durán Pozo" class="signature-img" decoding="async">
+          </div>
           <div class="authority-name">Dr. Gabriel Ramiro Durán Pozo</div>
           <div class="authority-role">DIRECTOR UNIDAD DE ADMISIÓN FACULTATIVA</div>
           <div class="authority-inst">Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica – UMSA</div>
