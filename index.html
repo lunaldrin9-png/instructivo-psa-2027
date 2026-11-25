@@ -42,14 +42,12 @@
       line-height: 1.65;
     }
 
-    /* Barra superior institucional */
     .top-bar {
       background: linear-gradient(90deg, var(--umsa-red) 0%, var(--umsa-red) 35%, var(--umsa-blue) 35%, var(--umsa-blue) 100%);
       height: 8px;
       width: 100%;
     }
 
-    /* Encabezado Principal */
     header.institutional-header {
       background: linear-gradient(135deg, var(--umsa-blue) 0%, #001b3a 100%);
       color: var(--white);
@@ -133,7 +131,6 @@
       color: #cbd5e1;
     }
 
-    /* Navegación Rápida Sticky */
     nav.quick-nav {
       position: sticky;
       top: 0;
@@ -171,7 +168,6 @@
       color: var(--umsa-red);
     }
 
-    /* Contenedor Principal */
     main.container {
       max-width: 1060px;
       margin: 2rem auto 4rem;
@@ -181,7 +177,6 @@
       gap: 1.75rem;
     }
 
-    /* Tarjetas de Sección */
     section.doc-card {
       background-color: var(--white);
       border-radius: var(--radius);
@@ -232,7 +227,6 @@
       margin-bottom: 0;
     }
 
-    /* Alertas y Destacados */
     .alert-box {
       padding: 1rem 1.25rem;
       border-radius: 8px;
@@ -259,7 +253,6 @@
       font-weight: 500;
     }
 
-    /* Tabla de Fechas */
     .table-wrapper {
       overflow-x: auto;
       margin: 1rem 0;
@@ -302,7 +295,6 @@
       white-space: nowrap;
     }
 
-    /* Listas estilizadas */
     ul.styled-list {
       list-style: none;
       display: flex;
@@ -333,10 +325,9 @@
       top: 0.05rem;
     }
 
-    /* Galería de Imágenes de Apoyo */
     .media-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.25rem;
       margin-top: 1.25rem;
     }
@@ -384,7 +375,6 @@
       margin-top: 0.15rem;
     }
 
-    /* Subapartados de la Sección 5 */
     .sub-block {
       border: 1px solid #e2e8f0;
       border-radius: 10px;
@@ -423,7 +413,6 @@
       align-items: center;
     }
 
-    /* Sección 6: Calculadoras y Botón Popup Video */
     .calc-models-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -489,7 +478,6 @@
       transform: translateY(-1px);
     }
 
-    /* Contacto y Firma */
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -554,7 +542,6 @@
       color: var(--text-muted);
     }
 
-    /* Footer */
     footer.institutional-footer {
       background-color: var(--umsa-blue);
       color: #cbd5e1;
@@ -564,7 +551,6 @@
       border-top: 4px solid var(--umsa-red);
     }
 
-    /* Modal Popup Video y Lightbox Imagen */
     .modal-overlay {
       display: none;
       position: fixed;
@@ -669,7 +655,6 @@
       font-size: 0.95rem;
     }
 
-    /* Responsividad */
     @media (max-width: 820px) {
       .header-container {
         grid-template-columns: 1fr;
@@ -693,11 +678,10 @@
 
   <div class="top-bar"></div>
 
-  <!-- ENCABEZADO INSTITUCIONAL -->
   <header class="institutional-header">
     <div class="header-container">
       <div class="logo-box">
-        <img src="img/UMSA.png" alt="Escudo Universidad Mayor de San Andrés">
+        <img src="UMSA.png" alt="Escudo Universidad Mayor de San Andrés">
       </div>
 
       <div class="header-titles">
@@ -710,12 +694,11 @@
       </div>
 
       <div class="logo-box">
-        <img src="img/LOGO%20MEDICINA%20OFICIAL.png" alt="Logo Facultad de Medicina UMSA">
+        <img src="LOGO%20MEDICINA%20OFICIAL.png" alt="Logo Facultad de Medicina UMSA">
       </div>
     </div>
   </header>
 
-  <!-- NAVEGACIÓN RÁPIDA -->
   <nav class="quick-nav" aria-label="Índice del instructivo">
     <div class="nav-inner">
       <a href="#sec-1">1. Objetivo</a>
@@ -733,10 +716,8 @@
     </div>
   </nav>
 
-  <!-- CONTENIDO PRINCIPAL -->
   <main class="container">
 
-    <!-- 1. OBJETIVO Y ALCANCE -->
     <section id="sec-1" class="doc-card">
       <div class="section-header">
         <span class="section-num">1</span>
@@ -751,7 +732,6 @@
       </div>
     </section>
 
-    <!-- 2. FECHAS DEL PRIMER EXAMEN PARCIAL -->
     <section id="sec-2" class="doc-card">
       <div class="section-header">
         <span class="section-num">2</span>
@@ -784,7 +764,6 @@
       </div>
     </section>
 
-    <!-- 3. HORARIO Y PROCEDIMIENTO DE INGRESO -->
     <section id="sec-3" class="doc-card">
       <div class="section-header">
         <span class="section-num">3</span>
@@ -804,7 +783,6 @@
       </div>
     </section>
 
-    <!-- 4. QUÉ DEBE LLEVAR EL POSTULANTE -->
     <section id="sec-4" class="doc-card">
       <div class="section-header">
         <span class="section-num">4</span>
@@ -823,22 +801,29 @@
 
         <div class="media-grid">
           <figure class="figure-card">
-            <img src="img/Que-debe-llevar-el-postulante-2.jpeg" alt="Ejemplo de Cédula de Identidad vigente" onclick="openLightbox(this)">
-            <figcaption class="figure-caption">Cédula de Identidad vigente (Original)<span class="zoom-hint">Clic para ampliar</span></figcaption>
+            <img src="Qu%C3%A9%20debe%20llevar%20el%20postulante1.png" alt="Qué debe llevar el postulante - Referencia 1" onclick="openLightbox(this)">
+            <figcaption class="figure-caption">Referencia 1: Qué debe llevar el postulante<span class="zoom-hint">Clic para ampliar</span></figcaption>
           </figure>
           <figure class="figure-card">
-            <img src="img/Que-debe-llevar-el-postulante-1.jpg" alt="Ejemplo de Cédula de Identidad de Extranjero" onclick="openLightbox(this)">
-            <figcaption class="figure-caption">Cédula de Extranjería / Pasaporte (Postulantes extranjeros)<span class="zoom-hint">Clic para ampliar</span></figcaption>
+            <img src="Qu%C3%A9%20debe%20llevar%20el%20postulante2.jpeg" alt="Qué debe llevar el postulante - Referencia 2" onclick="openLightbox(this)">
+            <figcaption class="figure-caption">Referencia 2: Qué debe llevar el postulante<span class="zoom-hint">Clic para ampliar</span></figcaption>
           </figure>
           <figure class="figure-card">
-            <img src="img/Formulario-de-inscripcion.png" alt="Formulario de Inscripción del Sistema SIA" onclick="openLightbox(this)">
-            <figcaption class="figure-caption">Formulario de Inscripción del Sistema SIA<span class="zoom-hint">Clic para ampliar</span></figcaption>
+            <img src="Qu%C3%A9%20debe%20llevar%20el%20postulante3.jpeg" alt="Qué debe llevar el postulante - Referencia 3" onclick="openLightbox(this)">
+            <figcaption class="figure-caption">Referencia 3: Qué debe llevar el postulante<span class="zoom-hint">Clic para ampliar</span></figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="Qu%C3%A9%20debe%20llevar%20el%20postulante4.jpeg" alt="Qué debe llevar el postulante - Referencia 4" onclick="openLightbox(this)">
+            <figcaption class="figure-caption">Referencia 4: Qué debe llevar el postulante<span class="zoom-hint">Clic para ampliar</span></figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="FORMULARIO%20DE%20INSCRIPCI%C3%93N.png" alt="Formulario de Inscripción" onclick="openLightbox(this)">
+            <figcaption class="figure-caption">Formulario de Inscripción<span class="zoom-hint">Clic para ampliar</span></figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- 5. QUÉ NO SE PERMITE PORTAR -->
     <section id="sec-5" class="doc-card">
       <div class="section-header">
         <span class="section-num">5</span>
@@ -846,7 +831,6 @@
       </div>
       <div class="section-body">
 
-        <!-- 5.1 -->
         <div class="sub-block">
           <div class="split-layout">
             <div>
@@ -854,13 +838,12 @@
               <p>Está <strong>terminantemente prohibido</strong> ingresar con mochilas, carteras, bolsos, cangureras o riñoneras, maletines, estuches, bolsas, billeteras, monederos o cualquier otro tipo de portador o contenedor de objetos personales, cualquiera sea su tamaño, material o forma.</p>
             </div>
             <figure class="figure-card">
-              <img src="img/Portadores-de-objetos.jpeg" alt="Prohibición de portadores de objetos" onclick="openLightbox(this)">
-              <figcaption class="figure-caption">Infografía 5.1: Portadores prohibidos<span class="zoom-hint">Clic para ampliar</span></figcaption>
+              <img src="Portadores%20de%20objetos.jpeg" alt="Prohibición de portadores de objetos" onclick="openLightbox(this)">
+              <figcaption class="figure-caption">Infografía 5.1: Portadores de objetos<span class="zoom-hint">Clic para ampliar</span></figcaption>
             </figure>
           </div>
         </div>
 
-        <!-- 5.2 -->
         <div class="sub-block">
           <div class="split-layout">
             <div>
@@ -871,13 +854,12 @@
               </div>
             </div>
             <figure class="figure-card">
-              <img src="img/Prendas-y-accesorios.jpeg" alt="Restricción de prendas y accesorios en cabeza, rostro y oídos" onclick="openLightbox(this)">
-              <figcaption class="figure-caption">Infografía 5.2: Rostro descubierto obligatorio<span class="zoom-hint">Clic para ampliar</span></figcaption>
+              <img src="Prendas%20y%20accesorios%20en%20la%20cabeza%2C%20el%20rostro%20o%20los%20o%C3%ADdos.jpeg" alt="Prendas y accesorios en la cabeza, el rostro o los oídos" onclick="openLightbox(this)">
+              <figcaption class="figure-caption">Infografía 5.2: Prendas y accesorios en cabeza, rostro o oídos<span class="zoom-hint">Clic para ampliar</span></figcaption>
             </figure>
           </div>
         </div>
 
-        <!-- 5.3 -->
         <div class="sub-block">
           <div class="split-layout">
             <div>
@@ -885,13 +867,12 @@
               <p>No se permite portar objetos metálicos, tales como hebillas grandes, cadenas, manillas, llaveros metálicos, latas o termos metálicos, ni objetos similares.</p>
             </div>
             <figure class="figure-card">
-              <img src="img/Objetos-metalicos.jpeg" alt="Prohibición de objetos metálicos" onclick="openLightbox(this)">
-              <figcaption class="figure-caption">Infografía 5.3: Detector de metales obligatorio<span class="zoom-hint">Clic para ampliar</span></figcaption>
+              <img src="Objetos%20met%C3%A1licos.jpeg" alt="Prohibición de objetos metálicos" onclick="openLightbox(this)">
+              <figcaption class="figure-caption">Infografía 5.3: Objetos metálicos<span class="zoom-hint">Clic para ampliar</span></figcaption>
             </figure>
           </div>
         </div>
 
-        <!-- 5.4 -->
         <div class="sub-block">
           <div class="split-layout">
             <div>
@@ -907,13 +888,12 @@
               </ul>
             </div>
             <figure class="figure-card">
-              <img src="img/Relojes-y-dispositivos-electronicos.jpeg" alt="Prohibición de relojes y dispositivos electrónicos" onclick="openLightbox(this)">
-              <figcaption class="figure-caption">Infografía 5.4: Dispositivos electrónicos prohibidos<span class="zoom-hint">Clic para ampliar</span></figcaption>
+              <img src="Relojes%20y%20dispositivos%20electr%C3%B3nicos.jpeg" alt="Relojes y dispositivos electrónicos" onclick="openLightbox(this)">
+              <figcaption class="figure-caption">Infografía 5.4: Relojes y dispositivos electrónicos<span class="zoom-hint">Clic para ampliar</span></figcaption>
             </figure>
           </div>
         </div>
 
-        <!-- 5.5 -->
         <div class="sub-block">
           <div class="split-layout">
             <div>
@@ -925,293 +905,8 @@
               </ul>
             </div>
             <figure class="figure-card">
-              <img src="img/Calzado-permitido.jpeg" alt="Calzado permitido y restricción de botas" onclick="openLightbox(this)">
-              <figcaption class="figure-caption">Infografía 5.5: Revisión de calzado obligatoria<span class="zoom-hint">Clic para ampliar</span></figcaption>
+              <img src="Calzado%20permitido%20y%20restricci%C3%B3n%20de%20botas.jpeg" alt="Calzado permitido y restricción de botas" onclick="openLightbox(this)">
+              <figcaption class="figure-caption">Infografía 5.5: Calzado permitido y restricción de botas<span class="zoom-hint">Clic para ampliar</span></figcaption>
             </figure>
           </div>
         </div>
-
-        <!-- 5.6 -->
-        <div class="sub-block">
-          <div class="split-layout">
-            <div>
-              <h3><span class="sub-tag">5.6</span> Material de consulta o apuntes</h3>
-              <p>Está prohibido portar formularios, fichas, libros, cuadernos, hojas sueltas o cualquier material de consulta. Igualmente, está prohibido llevar notas escritas en el cuerpo, en las prendas o en la calculadora.</p>
-            </div>
-            <figure class="figure-card">
-              <img src="img/Material-de-consulta.jpeg" alt="Prohibición de material de consulta o apuntes" onclick="openLightbox(this)">
-              <figcaption class="figure-caption">Infografía 5.6: Prohibición de apuntes y material<span class="zoom-hint">Clic para ampliar</span></figcaption>
-            </figure>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 6. CALCULADORAS AUTORIZADAS -->
-    <section id="sec-6" class="doc-card">
-      <div class="section-header">
-        <span class="section-num">6</span>
-        <h2>Calculadoras autorizadas</h2>
-      </div>
-      <div class="section-body">
-        <p>Únicamente se permite el uso de los <strong>seis (6) modelos de calculadoras científicas Casio</strong> que se detallan a continuación, presentados <strong>sin tapas, sin fundas ni carcasas</strong>:</p>
-
-        <div class="calc-models-grid">
-          <div class="calc-pill">CASIO fx-991MS</div>
-          <div class="calc-pill">CASIO fx-570LA PLUS</div>
-          <div class="calc-pill">CASIO fx-350ES PLUS</div>
-          <div class="calc-pill">CASIO fx-82LA PLUS</div>
-          <div class="calc-pill">CASIO fx-991LA PLUS</div>
-          <div class="calc-pill">CASIO fx-350MS</div>
-        </div>
-
-        <!-- CTA POPUP VIDEO -->
-        <div class="video-cta-banner">
-          <div class="video-cta-text">
-            <h4>Video Instructivo: Verificación de Calculadoras Autorizadas</h4>
-            <p>Revisa los modelos permitidos y las condiciones de presentación antes del examen.</p>
-          </div>
-          <button type="button" class="btn-video-popup" onclick="openVideoModal()">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            Ver Video Explicativo
-          </button>
-        </div>
-
-        <div class="media-single">
-          <figure class="figure-card">
-            <img src="img/Calculadoras-autorizadas.png" alt="Los 6 modelos de calculadoras científicas Casio autorizadas" onclick="openLightbox(this)">
-            <figcaption class="figure-caption">Infografía Oficial: Únicamente estos 6 modelos Casio están permitidos<span class="zoom-hint">Clic para ampliar</span></figcaption>
-          </figure>
-        </div>
-
-        <div class="alert-box alert-warning" style="margin-top: 1.5rem;">
-          <strong>Importante:</strong>
-          <ul class="styled-list" style="margin-top: 0.5rem;">
-            <li>Cualquier otro modelo o marca no está permitido, aunque sea una calculadora científica.</li>
-            <li>La calculadora será revisada visualmente antes del ingreso al aula.</li>
-            <li>No debe contener anotaciones, etiquetas, papeles adheridos ni escritos en su cuerpo o en su parte posterior.</li>
-            <li>No se permite compartir ni intercambiar calculadoras durante la evaluación.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. CONTROL DE INGRESO E INSPECCIÓN -->
-    <section id="sec-7" class="doc-card">
-      <div class="section-header">
-        <span class="section-num">7</span>
-        <h2>Control de ingreso e inspección</h2>
-      </div>
-      <div class="section-body">
-        <p>Al ingresar, todo postulante deberá aceptar y someterse a:</p>
-        <ul class="styled-list">
-          <li>El control de orden y la verificación de su identidad mediante documento de identidad y registro biométrico.</li>
-          <li>La revisión visual de la calculadora autorizada.</li>
-          <li>La verificación de que no porta objetos o prendas prohibidos.</li>
-          <li>Las indicaciones del personal de admisión, seguridad y logística, así como la asignación del ambiente correspondiente.</li>
-        </ul>
-        <div class="alert-box alert-info">
-          Los objetos prohibidos que sean detectados serán retenidos cuando corresponda.
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. NORMAS DE CONDUCTA DURANTE LA EVALUACIÓN -->
-    <section id="sec-8" class="doc-card">
-      <div class="section-header">
-        <span class="section-num">8</span>
-        <h2>Normas de conducta durante la evaluación</h2>
-      </div>
-      <div class="section-body">
-        <div class="split-layout">
-          <div>
-            <p>Durante todo el desarrollo del examen está <strong>prohibido</strong>:</p>
-            <ul class="styled-list">
-              <li>Hablar con otros postulantes.</li>
-              <li>Copiar o intentar copiar.</li>
-              <li>Mirar el examen de otro postulante.</li>
-              <li>Intercambiar materiales, calculadoras o cualquier otro objeto.</li>
-              <li>Manipular dispositivos no autorizados.</li>
-              <li>Levantarse del asiento sin autorización del responsable de aula.</li>
-              <li>Alterar el orden o interferir con la concentración de los demás postulantes.</li>
-            </ul>
-            <div class="alert-box alert-info">
-              El postulante deberá permanecer en su ambiente asignado, seguir las instrucciones del responsable de aula y respetar las normas de permanencia y de entrega del examen: tiempo de duración, tiempo mínimo de permanencia y procedimiento de entrega.
-            </div>
-          </div>
-          <figure class="figure-card">
-            <img src="img/Normas-de-conducta.jpeg" alt="Normas de conducta durante la evaluación" onclick="openLightbox(this)">
-            <figcaption class="figure-caption">Infografía 8: Prohibiciones durante el examen<span class="zoom-hint">Clic para ampliar</span></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. INTEGRIDAD ACADÉMICA -->
-    <section id="sec-9" class="doc-card">
-      <div class="section-header">
-        <span class="section-num">9</span>
-        <h2>Integridad académica</h2>
-      </div>
-      <div class="section-body">
-        <p>La P.S.A. se rige por los principios de <strong>honestidad, transparencia e igualdad de condiciones</strong>. Todo postulante tiene la obligación de rendir su evaluación de forma individual y honesta. Cualquier intento de fraude, suplantación o alteración del proceso afecta a todos los postulantes y será sancionado.</p>
-        <p>Además, conforme a la convocatoria, el incumplimiento de los requisitos o la falsedad de la documentación inhabilitan al postulante.</p>
-      </div>
-    </section>
-
-    <!-- 10. PREVISIONES PERSONALES PREVIAS AL INGRESO -->
-    <section id="sec-10" class="doc-card">
-      <div class="section-header">
-        <span class="section-num">10</span>
-        <h2>Previsiones personales previas al ingreso</h2>
-      </div>
-      <div class="section-body">
-        <div class="split-layout">
-          <div>
-            <p>Los postulantes deberán presentarse el día del examen <strong>habiendo consumido previamente sus alimentos</strong>, ya que está prohibido ingresar con comida, golosinas o bebidas de envase no autorizados al recinto.</p>
-            <p>Asimismo, deberán <strong>haber atendido sus necesidades fisiológicas antes de ingresar</strong> a los ambientes de evaluación, a fin de evitar solicitudes de salida al sanitario durante el desarrollo de la prueba y garantizar así el orden, el control y el normal desenvolvimiento de la actividad académica de admisión.</p>
-          </div>
-          <figure class="figure-card">
-            <img src="img/Previsiones-personales.jpeg" alt="Previsiones personales previas al ingreso" onclick="openLightbox(this)">
-            <figcaption class="figure-caption">Infografía 10: Indicaciones previas al ingreso<span class="zoom-hint">Clic para ampliar</span></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- 11. SANCIONES -->
-    <section id="sec-11" class="doc-card">
-      <div class="section-header">
-        <span class="section-num">11</span>
-        <h2>Sanciones</h2>
-      </div>
-      <div class="section-body">
-        <p>El incumplimiento de las instrucciones de este documento, la portación de objetos prohibidos, cualquier intento de fraude o la alteración del orden dará lugar, según la gravedad del caso, a:</p>
-        <ul class="styled-list">
-          <li><strong>La retención del objeto indebido</strong>, cuando corresponda.</li>
-          <li><strong>El impedimento de ingreso.</strong></li>
-          <li><strong>La anulación o inhabilitación del examen.</strong></li>
-        </ul>
-        <p>Las sanciones se aplicarán conforme a la normativa facultativa vigente.</p>
-        <div class="alert-box alert-warning">
-          El postulante deberá cumplir íntegramente con todo lo establecido en el presente instructivo y comprometerse a acatar de manera estricta las disposiciones e instrucciones que se impartan el día del examen. En caso de incumplir cualquiera de las normas aquí descritas o las indicaciones brindadas durante la jornada, el postulante deberá asumir las sanciones correspondientes. Para este fin, se invocan las cláusulas del <strong>Documento Privado</strong> que cada postulante aceptó, firmó y presentó en su inscripción virtual, mediante el cual se comprometió a observar los reglamentos vigentes de Admisión Facultativa, preservar la infraestructura universitaria, mantener el orden y el decoro, y someterse a las responsabilidades y sanciones que correspondan.
-        </div>
-      </div>
-    </section>
-
-    <!-- 12. DISPOSICIÓN FINAL Y CONTACTO -->
-    <section id="sec-12" class="doc-card">
-      <div class="section-header">
-        <span class="section-num">12</span>
-        <h2>Disposición final y contacto</h2>
-      </div>
-      <div class="section-body">
-        <p>Los casos no previstos en este instructivo serán resueltos por la <strong>Unidad de Admisión Facultativa</strong>, conforme a la normativa vigente de la Facultad y de la Universidad.</p>
-
-        <div class="contact-grid">
-          <div class="contact-item">
-            <strong>Teléfono de Consultas</strong>
-            <span>2612345 (Lunes a viernes, 08:30–12:30 y 14:30–18:30)</span>
-          </div>
-          <div class="contact-item">
-            <strong>Correo Electrónico</strong>
-            <a href="mailto:admision.fment@umsalud.edu.bo">admision.fment@umsalud.edu.bo</a>
-          </div>
-          <div class="contact-item">
-            <strong>Página Web Institucional</strong>
-            <a href="https://fment.umsa.bo/" target="_blank" rel="noopener noreferrer">https://fment.umsa.bo/</a>
-          </div>
-        </div>
-
-        <div class="signature-box">
-          <div class="date-place">La Paz, noviembre de 2026</div>
-          <div class="authority-name">Dr. Gabriel Ramiro Durán Pozo</div>
-          <div class="authority-role">DIRECTOR UNIDAD DE ADMISIÓN FACULTATIVA</div>
-          <div class="authority-inst">Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica – UMSA</div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- PIE DE PÁGINA -->
-  <footer class="institutional-footer">
-    <p><strong>Universidad Mayor de San Andrés</strong> &bull; Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica</p>
-    <p>Unidad de Admisión Facultativa &bull; Proceso de Admisión Gestión 2027</p>
-  </footer>
-
-  <!-- MODAL POPUP PARA VIDEO DE GOOGLE DRIVE -->
-  <div id="videoModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle" onclick="closeModalOnBackdrop(event, 'videoModal')">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <h3 id="videoModalTitle">Calculadoras Científicas Autorizadas – PSA 2027</h3>
-        <button type="button" class="modal-close" aria-label="Cerrar video" onclick="closeVideoModal()">&times;</button>
-      </div>
-      <div class="video-responsive">
-        <iframe id="driveVideoFrame" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL LIGHTBOX PARA AMPLIAR INFOGRAFÍAS -->
-  <div id="lightboxModal" class="modal-overlay" role="dialog" aria-modal="true" onclick="closeLightbox()">
-    <div class="lightbox-dialog">
-      <img id="lightboxImg" src="" alt="">
-      <div id="lightboxCaption" class="lightbox-caption"></div>
-    </div>
-  </div>
-
-  <script>
-    const DRIVE_VIDEO_URL = "https://drive.google.com/file/d/1e4lu_jce8ytaGJzem0opfwNTy8fO__Wr/preview";
-
-    function openVideoModal() {
-      const modal = document.getElementById("videoModal");
-      const frame = document.getElementById("driveVideoFrame");
-      frame.src = DRIVE_VIDEO_URL;
-      modal.classList.add("active");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeVideoModal() {
-      const modal = document.getElementById("videoModal");
-      const frame = document.getElementById("driveVideoFrame");
-      modal.classList.remove("active");
-      frame.src = ""; // Detiene la reproducción al cerrar el popup
-      document.body.style.overflow = "";
-    }
-
-    function openLightbox(imgElement) {
-      const modal = document.getElementById("lightboxModal");
-      const lightboxImg = document.getElementById("lightboxImg");
-      const caption = document.getElementById("lightboxCaption");
-      lightboxImg.src = imgElement.src;
-      lightboxImg.alt = imgElement.alt;
-      caption.textContent = imgElement.alt;
-      modal.classList.add("active");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeLightbox() {
-      const modal = document.getElementById("lightboxModal");
-      modal.classList.remove("active");
-      document.body.style.overflow = "";
-    }
-
-    function closeModalOnBackdrop(event, modalId) {
-      if (event.target.id === modalId) {
-        if (modalId === "videoModal") closeVideoModal();
-        if (modalId === "lightboxModal") closeLightbox();
-      }
-    }
-
-    document.addEventListener("keydown", function(e) {
-      if (e.key === "Escape") {
-        closeVideoModal();
-        closeLightbox();
-      }
-    });
-  </script>
-
-</body>
-</html>
