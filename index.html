@@ -599,11 +599,12 @@
       display: none;
       position: fixed;
       inset: 0;
-      background-color: rgba(15, 23, 42, 0.85);
+      background-color: rgba(15, 23, 42, 0.88);
       z-index: 1000;
       align-items: center;
       justify-content: center;
       padding: 1rem;
+      overflow-y: auto;
     }
 
     .modal-overlay.active {
@@ -618,34 +619,39 @@
       overflow: hidden;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
       border-top: 5px solid var(--umsa-red);
+      margin: auto;
     }
 
     .modal-header {
       background-color: var(--umsa-blue);
       color: var(--white);
-      padding: 0.9rem 1.25rem;
+      padding: 0.85rem 1.15rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 0.75rem;
     }
 
     .modal-header h3 {
-      font-size: 1rem;
+      font-size: 0.98rem;
       font-weight: 700;
+      line-height: 1.3;
     }
 
     .modal-close {
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.16);
       border: none;
       color: var(--white);
-      width: 32px;
-      height: 32px;
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
       border-radius: 50%;
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
     }
 
     .modal-close:hover {
@@ -654,6 +660,7 @@
 
     .video-responsive {
       position: relative;
+      width: 100%;
       padding-bottom: 56.25%;
       height: 0;
       background: #000;
@@ -710,6 +717,29 @@
       }
       .header-titles h1 {
         font-size: 1.45rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .modal-overlay {
+        padding: 0.5rem;
+      }
+      .modal-dialog {
+        border-radius: 10px;
+        max-width: 100%;
+      }
+      .modal-header {
+        padding: 0.7rem 0.9rem;
+      }
+      .modal-header h3 {
+        font-size: 0.88rem;
+      }
+      .video-cta-banner {
+        padding: 1rem 1.1rem;
+      }
+      .btn-video-popup {
+        width: 100%;
+        justify-content: center;
       }
     }
 
