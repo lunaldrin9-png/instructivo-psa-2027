@@ -213,6 +213,7 @@
       font-size: 1.2rem;
       font-weight: 700;
       letter-spacing: 0.2px;
+      overflow-wrap: break-word;
     }
 
     .section-body {
@@ -271,6 +272,7 @@
       padding: 1rem 1.2rem;
       border-bottom: 1px solid #e2e8f0;
       vertical-align: middle;
+      overflow-wrap: break-word;
     }
 
     table.schedule-table tr:nth-child(even) td {
@@ -721,6 +723,48 @@
     }
 
     @media (max-width: 640px) {
+      main.container {
+        padding: 0 0.85rem;
+        margin: 1.25rem auto 3rem;
+      }
+      .section-header {
+        padding: 0.85rem 1rem;
+      }
+      .section-header h2 {
+        font-size: 1.05rem;
+      }
+      .section-body {
+        padding: 1rem;
+      }
+      table.schedule-table,
+      table.schedule-table thead,
+      table.schedule-table tbody,
+      table.schedule-table th,
+      table.schedule-table td,
+      table.schedule-table tr {
+        display: block;
+        width: 100%;
+      }
+      table.schedule-table thead {
+        display: none;
+      }
+      table.schedule-table tr {
+        border-bottom: 2px solid var(--border-color);
+        padding: 0.85rem;
+      }
+      table.schedule-table tr:last-child {
+        border-bottom: none;
+      }
+      table.schedule-table td {
+        padding: 0.35rem 0;
+        border: none;
+      }
+      .date-badge {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.65rem;
+        white-space: normal;
+        margin-bottom: 0.35rem;
+      }
       .modal-overlay {
         padding: 0.5rem;
       }
