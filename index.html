@@ -443,51 +443,6 @@
       justify-content: center;
     }
 
-    .video-cta-banner {
-      background: linear-gradient(135deg, var(--umsa-blue) 0%, var(--umsa-blue-mid) 100%);
-      color: var(--white);
-      border-radius: 10px;
-      padding: 1.25rem 1.5rem;
-      margin: 1.25rem 0;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      border-left: 5px solid var(--umsa-red);
-    }
-
-    .video-cta-text h4 {
-      font-size: 1.05rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .video-cta-text p {
-      font-size: 0.88rem;
-      color: #dbeafe;
-      margin: 0;
-    }
-
-    .btn-video-popup {
-      background-color: var(--umsa-red);
-      color: var(--white);
-      border: none;
-      padding: 0.75rem 1.35rem;
-      border-radius: 8px;
-      font-family: inherit;
-      font-size: 0.95rem;
-      font-weight: 700;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      box-shadow: 0 4px 12px rgba(200, 16, 46, 0.35);
-    }
-
-    .btn-video-popup:hover {
-      background-color: var(--umsa-red-dark);
-    }
-
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -665,23 +620,6 @@
       background: var(--umsa-red);
     }
 
-    .video-responsive {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 9 / 15;
-      max-height: 78vh;
-      background: #000;
-    }
-
-    .video-responsive iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
     .lightbox-dialog {
       max-width: 900px;
       background: transparent;
@@ -776,17 +714,6 @@
       .modal-dialog {
         border-radius: 12px;
         max-width: 380px;
-      }
-      .video-responsive {
-        aspect-ratio: 9 / 14;
-        max-height: 75vh;
-      }
-      .video-cta-banner {
-        padding: 1rem 1.1rem;
-      }
-      .btn-video-popup {
-        width: 100%;
-        justify-content: center;
       }
     }
 
@@ -1072,17 +999,6 @@
           </figure>
         </div>
 
-        <div class="video-cta-banner">
-          <div class="video-cta-text">
-            <h4>Video Instructivo: Verificación de Calculadoras Autorizadas</h4>
-            <p>Revisa los modelos permitidos y las condiciones de presentación antes del examen.</p>
-          </div>
-          <button type="button" class="btn-video-popup" onclick="openVideoModal()">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            Ver Video Explicativo
-          </button>
-        </div>
-
         <div class="alert-box alert-warning" style="margin-top: 1.25rem;">
           <strong>Importante:</strong>
           <ul class="styled-list" style="margin-top: 0.5rem;">
@@ -1244,18 +1160,6 @@
     <p>Unidad de Admisión Facultativa &bull; Proceso de Admisión Gestión 2027</p>
   </footer>
 
-  <div id="videoModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle" onclick="closeModalOnBackdrop(event, 'videoModal')">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <h3 id="videoModalTitle">Calculadoras Científicas Autorizadas – PSA 2027</h3>
-        <button type="button" class="modal-close" aria-label="Cerrar video" onclick="closeVideoModal()">&times;</button>
-      </div>
-      <div class="video-responsive">
-        <iframe id="driveVideoFrame" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
   <div id="lightboxModal" class="modal-overlay" role="dialog" aria-modal="true" onclick="closeLightbox()">
     <div class="lightbox-dialog">
       <img id="lightboxImg" src="" alt="">
@@ -1276,24 +1180,6 @@
     window.addEventListener("load", forceTopScroll);
     window.addEventListener("pageshow", forceTopScroll);
 
-    const DRIVE_VIDEO_URL = "https://drive.google.com/file/d/1e4lu_jce8ytaGJzem0opfwNTy8fO__Wr/preview";
-
-    function openVideoModal() {
-      const modal = document.getElementById("videoModal");
-      const frame = document.getElementById("driveVideoFrame");
-      frame.src = DRIVE_VIDEO_URL;
-      modal.classList.add("active");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeVideoModal() {
-      const modal = document.getElementById("videoModal");
-      const frame = document.getElementById("driveVideoFrame");
-      modal.classList.remove("active");
-      frame.src = "";
-      document.body.style.overflow = "";
-    }
-
     function openLightbox(imgElement) {
       const modal = document.getElementById("lightboxModal");
       const lightboxImg = document.getElementById("lightboxImg");
@@ -1311,16 +1197,8 @@
       document.body.style.overflow = "";
     }
 
-    function closeModalOnBackdrop(event, modalId) {
-      if (event.target.id === modalId) {
-        if (modalId === "videoModal") closeVideoModal();
-        if (modalId === "lightboxModal") closeLightbox();
-      }
-    }
-
     document.addEventListener("keydown", function(e) {
       if (e.key === "Escape") {
-        closeVideoModal();
         closeLightbox();
       }
     });
